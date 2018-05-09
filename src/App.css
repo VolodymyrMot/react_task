@@ -1,0 +1,149 @@
+#root{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.header{
+  background: #a2a2a2;
+  box-shadow: 0.5px 0.5px 2px #757474;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.userName{
+  margin: 0 auto;
+  width: fit-content;
+}
+.content{
+  width: 100%;
+}
+
+.btn{
+  font-family: 'Libre Baskerville', serif;
+  padding: 5px;
+  margin: 10px;
+  width: 65px;
+  height: 35px;
+  background: #2c2c2c;
+  color: #c5c5c5;
+  font-size: 20px;
+  border: #111111;
+  border-radius: 5px;
+  cursor: pointer;
+  transition-duration: 1s;
+  animation: for_btn infinite 0.8s linear;
+}
+.btn:hover{
+  transition-duration: 1s;
+  animation: for_btn2 infinite 0.8s linear;
+}
+.btn:active {
+  transition-duration: 1s;
+  animation: btn_active normal 0.1s linear;
+}
+
+input{
+  font-family: 'Libre Baskerville', serif;
+  color: #3c3b3b;
+  height: 25px;
+  margin: 10px;
+  font-size: 20px;
+  background: linear-gradient(to bottom right, #a2a2a2, #ececec);
+  box-shadow: 0.5px 0.5px 2px #757474;
+}
+#blocks{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.block{
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+  background: #d5d5d5;
+  height: fit-content;
+  box-shadow: 0.5px 0.5px 2px #757474;
+  cursor: pointer;
+}
+
+#photos{
+  width: 100%;
+  background: #d5d5d5;
+  box-shadow: 0.5px 0.5px 2px #757474;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.photo{
+  width: 40%;
+  margin: 10px;
+}
+#photos img{
+  width: 100%;
+}
+
+
+
+
+
+@keyframes for_btn {
+  0%{
+    box-shadow: 1px 1px 2px #646464;
+    border-radius: 5px;
+  }
+  50%{
+    box-shadow: 2px 2px 5px #262525;
+    border-radius: 2px;
+  }
+  100%{
+    box-shadow: 1px 1px 2px #646464;
+    border-radius: 5px;
+  }
+}
+@keyframes for_btn2 {
+  0%{
+    color: white;
+  }
+  50%{
+    color: #80ed5b;
+  }
+  100%{
+    color: white;
+  }
+}
+
+@keyframes btn_active {
+  0%{
+    background: linear-gradient(top left, white 20%, black);
+  }
+  50%{
+    background: linear-gradient(top left, black, white 40%, black);
+  }
+  100%{
+    background: linear-gradient(top left, black 80%, white);
+  }
+}
+
+@keyframes btn_active2 {
+  0%{
+    background: linear-gradient(top left, white 20%, yellow);
+  }
+  50%{
+    background: linear-gradient(top left, yellow, white 40%, yellow);
+  }
+  100%{
+    background: linear-gradient(top left, yellow 80%, white);
+  }
+}
+
